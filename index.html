@@ -9,7 +9,7 @@
         <script src="static/index.js"></script>
     </head>
     <body>
-        <div class="app-area">
+        <div class="app-area" onload="textAreaInputListener()">
             <div class="title-bar">
                 <span>Panda Filehelper</span>
             </div>
@@ -17,7 +17,7 @@
             <div class="msg-list-box"></div>
             <div class="divider divider-2"></div>
             <div class="msg-editor">
-                <textarea class="msg-editor-text-area"></textarea>
+                <textarea class="msg-editor-text-area" oninput="enableOrDisableSendButton(this)"></textarea>
                 <!-- <input /> -->
                 <div class="msg-editor-btm-bar">
                     <div class="msg-editor-send-button">Send</div>

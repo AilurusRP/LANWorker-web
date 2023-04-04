@@ -1,8 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
     background-color: #795548;
+    font-family: Sans-serif;
 }
 
 .app-area {
@@ -19,7 +24,6 @@ body {
     height: 8vh;
     line-height: 8vh;
     font-size: 22px;
-    font-family: Sans-serif;
 }
 
 .divider {
@@ -35,13 +39,17 @@ body {
 
 .msg-editor {
     height: 36vh;
+
+    /* To get rid of the extra space under textarea. 
+    (https://stackoverflow.com/questions/7144843/extra-space-under-textarea-differs-along-browsers) */
+    line-height: 0;
 }
 
 .msg-editor-text-area {
     height: 28vh;
     width: 74vh;
     margin: 0;
-    padding: 0;
+    padding: 18px;
     border: 0;
     resize: none;
 }
@@ -53,20 +61,22 @@ body {
 .msg-editor-btm-bar {
     height: 8vh;
     width: 74vh;
+    overflow: hidden;
 }
 
 .msg-editor-send-button {
     background-color: #79554822;
-    height: 4vh;
+    height: 4.5vh;
     width: 12vh;
-    margin: 1vh 3vh 1vh 59vh;
+    margin: 1vh 3vh 0vh 59vh;
+    padding: 0.4vh;
     text-align: center;
     line-height: 4vh;
     color: #79554888;
     border-radius: 5px;
 }
 
-.msg-editor-send-button:hover {
+.msg-editor-send-button-enabled {
     background-color: #795548;
     color: white;
 }
