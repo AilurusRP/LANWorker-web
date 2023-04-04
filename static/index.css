@@ -1,0 +1,72 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #795548;
+}
+
+.app-area {
+    height: 94vh;
+    width: 74vh;
+    margin: 3vh calc((100vw - 74vh) / 2) 3vh calc((100vw - 74vh) / 2);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.title-bar {
+    text-align: left;
+    padding: 0 4vh;
+    height: 8vh;
+    line-height: 8vh;
+    font-size: 22px;
+    font-family: Sans-serif;
+}
+
+.divider {
+    height: 0px;
+    width: 74vh;
+    border-top: 1px solid #795548;
+    opacity: 0.2;
+}
+
+.msg-list-box {
+    height: 50vh;
+}
+
+.msg-editor {
+    height: 36vh;
+}
+
+.msg-editor-text-area {
+    height: 28vh;
+    width: 74vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    resize: none;
+}
+
+.msg-editor-text-area:focus {
+    outline: none;
+}
+
+.msg-editor-btm-bar {
+    height: 8vh;
+    width: 74vh;
+}
+
+.msg-editor-send-button {
+    background-color: #79554822;
+    height: 4vh;
+    width: 12vh;
+    margin: 1vh 3vh 1vh 59vh;
+    text-align: center;
+    line-height: 4vh;
+    color: #79554888;
+    border-radius: 5px;
+}
+
+.msg-editor-send-button:hover {
+    background-color: #795548;
+    color: white;
+}
