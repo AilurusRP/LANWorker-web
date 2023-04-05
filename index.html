@@ -17,9 +17,15 @@
             <div class="msg-list-box"></div>
             <div class="divider divider-2"></div>
             <div class="msg-editor">
+                <div class="msg-editor-top-bar">
+                    <div class="msg-editor-select-file-button">
+                        <!-- Icon image from 
+                            https://fonts.google.com/icons?selected=Material+Symbols+Outlined:drive_folder_upload -->
+                        <img src="static/folder.png" alt="select and send files" />
+                    </div>
+                </div>
                 <textarea class="msg-editor-text-area" oninput="enableOrDisableSendButton(this)"></textarea>
-                <!-- <input /> -->
-                <div class="msg-editor-btm-bar">
+                <div class="msg-editor-bottom-bar">
                     <div class="msg-editor-send-button">Send</div>
                 </div>
             </div>

@@ -45,11 +45,28 @@ body {
     line-height: 0;
 }
 
+.msg-editor-top-bar {
+    height: 5vh;
+    overflow: hidden;
+}
+
+.msg-editor-select-file-button {
+    height: 4vh;
+    margin: .5vh 0 .5vh 2vh;
+    color: #795548;
+    line-height: 5vh;
+}
+
+.msg-editor-top-bar img {
+    height: 4vh;
+    opacity: .7;
+}
+
 .msg-editor-text-area {
-    height: 28vh;
+    height: 23vh;
     width: 74vh;
     margin: 0;
-    padding: 18px;
+    padding: 0 2vh 1vh 2vh;
     border: 0;
     resize: none;
 }
@@ -58,7 +75,7 @@ body {
     outline: none;
 }
 
-.msg-editor-btm-bar {
+.msg-editor-bottom-bar {
     height: 8vh;
     width: 74vh;
     overflow: hidden;
