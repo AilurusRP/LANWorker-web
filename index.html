@@ -5,16 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Panda Filehelper</title>
-        <link rel="stylesheet" href="static/index.css" />
-        <script src="static/index.js"></script>
+        <link rel="stylesheet" href="/static/index.css" />
+        <script src="/static/index.js"></script>
     </head>
-    <body>
-        <div class="app-area" onload="textAreaInputListener()">
+    <body onload="startSSEClient()">
+        <div class="app-area">
             <div class="title-bar">
                 <span>Panda Filehelper</span>
             </div>
             <div class="divider divider-1"></div>
-            <div class="msg-list-box"></div>
+            <div class="msg-list-box">
+                <div class="msg-list-box-inner"></div>
+            </div>
             <div class="divider divider-2"></div>
             <div class="msg-editor">
                 <div class="msg-editor-top-bar">
@@ -24,9 +26,14 @@
                         <img src="static/folder.png" alt="select and send files" />
                     </div>
                 </div>
-                <textarea class="msg-editor-text-area" oninput="enableOrDisableSendButton(this)"></textarea>
+                <textarea
+                    class="msg-editor-text-area"
+                    oninput="setButtonState(this)"
+                    onfocus="handleKeyShortcut(true)"
+                    onblur="handleKeyShortcut(false)"
+                ></textarea>
                 <div class="msg-editor-bottom-bar">
-                    <div class="msg-editor-send-button">Send</div>
+                    <div class="msg-editor-send-button" onclick="sendMsg()">Send</div>
                 </div>
             </div>
         </div>

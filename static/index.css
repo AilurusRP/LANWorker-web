@@ -35,6 +35,49 @@ body {
 
 .msg-list-box {
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 2vh 1vh 2vh;
+    overflow-y: scroll;
+}
+
+.msg-list-elem-left {
+    background-color: #795548;
+    min-height: 2rem;
+    height: fit-content;
+    max-width: 50vh;
+    word-wrap: break-word;
+    line-height: 2rem;
+    border-radius: 5px;
+    padding: 0.5vh 1.5vh 0.5vh 1.5vh;
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    color: white;
+    overflow-y: visible;
+    margin: 2vh 0 4vh 1vh;
+}
+
+.msg-list-elem-right-outter {
+    text-align: right;
+}
+
+.msg-list-elem-right {
+    display: inline-block;
+    background-color: #795548;
+    min-height: 2rem;
+    height: fit-content;
+    max-width: 50vh;
+    word-wrap: break-word;
+    line-height: 2rem;
+    border-radius: 5px;
+    padding: 0.5vh 1.5vh 0.5vh 1.5vh;
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    color: white;
+    overflow-y: visible;
+    margin: 2vh 0 4vh 24vh;
 }
 
 .msg-editor {
