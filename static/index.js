@@ -7,6 +7,7 @@ function startSSEClient() {
     eventSource.onmessage = msgEvent => {
         console.log(msgEvent);
         const msgData = msgEvent.data;
+        console.log(msgData.split(""));
         addLeftMsg(msgList, msgData);
     };
     eventSource.onerror = err => console.log(err);
@@ -60,7 +61,7 @@ function handleKeyShortcut(handle) {
 
 async function sendMsg() {
     const msgEditor = document.querySelector("textarea.msg-editor-text-area");
-    const response = await fetch("/webmsg", {
+    const response = await fetch("/web-msg", {
         method: "POST",
         body: JSON.stringify({
             msg: msgEditor.value,
